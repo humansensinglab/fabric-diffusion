@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="FabricDiffusion">
+  <meta name="keywords" content="FabricDiffusion">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <title>FabricDiffusion: High-Fidelity Texture Transfer for 3D Garments Generation from In-The-Wild Images</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
+<!--   <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./fabric-diffusion/static/css/bulma.min.css">
+  <link rel="stylesheet" href="./fabric-diffusion/static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./fabric-diffusion/static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./fabric-diffusion/static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./fabric-diffusion/static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./fabric-diffusion/static/js/fontawesome.all.min.js"></script>
+  <script src="./fabric-diffusion/static/js/bulma-carousel.min.js"></script>
+  <script src="./fabric-diffusion/static/js/bulma-slider.min.js"></script>
+  <script src="./fabric-diffusion/static/js/index.js"></script>
+
+  <style>
+  .spaced-image {
+      margin-left: 500px;
+  }
+</style>
+
+
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">FabricDiffusion: High-Fidelity Texture Transfer for 3D Garments Generation from In-The-Wild Images</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://czhang0528.github.io/">Cheng Zhang*</a><sup>1</sup>&nbsp&nbsp&nbsp
+            </span>
+            
+            <span class="author-block">
+              <a href="https://harrywang355.github.io/">Yuanhao Wang*</a><sup>1</sup>&nbsp&nbsp&nbsp
+            </span>
+            
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/francisco-vicente-carrasco-32a508144/">Francisco Vicente Carrasco</a><sup>1</sup>&nbsp&nbsp&nbsp
+            </span>
+            
+            <span class="author-block">
+              <a href="https://sites.google.com/view/chengleiwu/">Chenglei Wu</a><sup>2</sup>&nbsp&nbsp&nbsp
+            </span>
+
+            <span class="author-block">
+              <a href="https://is.mpg.de/~jyang">Jinlong Yang</a><sup>2</sup>
+            </span>
+
+            <br> 
+            
+            <span class="author-block">
+              <a href="https://thabobeeler.com/">Thabo Beeler</a><sup>2</sup>&nbsp&nbsp&nbsp
+            </span>
+            
+            <span class="author-block">
+              <a href="https://www.cs.cmu.edu/~ftorre/">Fernando De la Torre</a><sup>1</sup>
+            </span>
+
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Carnegie Mellon University</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+            <span class="author-block"><sup>2</sup>Google AR</span>
+          </div>
+
+          <br>
+
+          <div>
+            <h1 class="title">SIGGRAPH Asia 2024</h1>
+          </div>
+          
+          <br>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- arxiv PDF Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/humansensinglab/fabric-diffusion"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>GitHub</span>
+                  </a>
+              </span>
+              <!-- Demo Link. -->
+<!--               <span class="link-block">
+                  <a href="#"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-edit"></i>
+                    </span>
+                    <span>Demo</span>
+                  </a>
+                </span> -->
+              <!-- Dataset Link. -->
+<!--               <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+                </span> -->
+<!--               <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Poster Link. -->
+              <!-- <span class="link-block">
+                <a href="./iti-gen/static/images/iti-gen_poster.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa fa-file"></i>
+                  </span>
+                  <span>Poster</span>
+                </a>
+              </span> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="content has-text-centered">
+            <img src="./fabric-diffusion/static/images/teaser.jpg" width="900px">
+          </div>
+       <p>
+         Given a real-world 2D clothing image and a raw 3D garment mesh, FabricDiffusion is able to extract high-quality texture maps and prints from the reference image and transfer them to the target 3D garment surface.
+       </p>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We introduce FabricDiffuion, a method for transferring fabric textures from a single clothing image to 3D garments of arbitrary shapes. Existing approaches typically synthesize textures on the garment surface through 2D-to-3D texture mapping or depth-aware inpainting via generative models. Unfortunately, these methods often struggles at capturing and preserving texture details, particularly due to challenging occlusions, distortions, or poses in the input image. Inspired by the observation that in fashion industry most garments are constructed by stitching sewing patterns with flat, repeatable textures, we cast the task of clothing texture transfer as extracting distortion-free, tileable texture materials that are subsequently mapped onto the UV space of the garment. Building upon this insight, we train a denoising diffusion model with a large-scale synthetic dataset to rectify distortions in the input texture image. This process yields a flat texture map that enables a tight coupling with existing Physically-Based Rendering (PBR) material generation pipelines, allowing for realistic relighting of the garment under various lighting conditions. We show that FabricDiffusion can transfer a variety of features from a single clothing image including texture patterns, material properties, and detailed prints and logos. Extensive experiments demonstrate that our model significantly outperforms state-to-the-art methods on both synthetic data and real-world, in-the-wild clothing images while generalizing to unseen textures and garment shapes. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{zhang2024fabricdiffusion,
+    title={{FabricDiffusion}: High-Fidelity Texture Transfer for 3D Garments Generation from In-The-Wild Images},
+    author={Zhang, Cheng and Wang, Yuanhao and Vicente Carrasco, Francisco and Wu, Chenglei and Yang, Jinlong and 
+            Beeler, Thabo and De la Torre, Fernando},
+    booktitle={ACM SIGGRAPH Asia},
+    year={2024},
+}</code></pre>
+  </div>
+</section>
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/abs/2309.05569">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/humansensinglab/ITI-GEN" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            The source code based on the <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page. If you want to use this template, please credit them appropriately.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=100&t=n&d=vBRMsStzOWjnj0SM5pfZPRxDUEB-d8hVi66kmrxekI4&co=ffffff&cmo=ffffff&cmn=ffffff&ct=ffffff'></script>
+</body>
+</html>
