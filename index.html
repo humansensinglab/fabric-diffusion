@@ -174,11 +174,11 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <div class="content has-text-centered">
-            <img src="./fabric-diffusion/static/images/teaser.jpg" width="900px">
-          </div>
-       <p>
-         Given a real-world 2D clothing image and a raw 3D garment mesh, FabricDiffusion is able to extract high-quality texture maps and prints from the reference image and transfer them to the target 3D garment surface.
-       </p>
+            <img src="./fabric-diffusion/static/images/teaser.jpg" width="1000px">
+      </div>
+       <h2 class="subtitle has-text-centered">
+         From a real-world 2D clothing image, FabricDiffusion extracts high-quality texture maps and prints and transfers them to the target 3D garment of arbitrary shapes.
+       </h2>
 
     </div>
   </div>
@@ -199,7 +199,43 @@
         </div>
       </div>
     </div>
+
+    <br><br>
+
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Video and Results</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/xYiyjwldtWc?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+        <h2 class="title is-3 has-text-centered">Framework of FabricDiffusion</h2>
+
+          <div class="content has-text-centered">
+            <img src="./fabric-diffusion/static/images/main.jpg" width="1000px">
+          </div>
+            <div class="content has-text-justified">
+              <p>
+              Given a real-life clothing image and region captures of its fabric materials and prints, (a) our model extracts normalized textures and prints, and (b) generates distortion-free, high-quality Physically-Based Rendering (PBR) materials and transparent prints. (c) These materials and prints can be applied to the target 3D garment meshes of arbitrary shapes (d) for realistic relighting. Our model is trained purely with synthetic data and achieves zero-shot generalization to real-world images.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
+
+
 </section>
 
 
@@ -208,11 +244,11 @@
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@inproceedings{zhang2024fabricdiffusion,
-    title={{FabricDiffusion}: High-Fidelity Texture Transfer for 3D Garments Generation from In-The-Wild Images},
-    author={Zhang, Cheng and Wang, Yuanhao and Vicente Carrasco, Francisco and Wu, Chenglei and Yang, Jinlong and 
-            Beeler, Thabo and De la Torre, Fernando},
-    booktitle={ACM SIGGRAPH Asia},
-    year={2024},
+    title     = {{FabricDiffusion}: High-Fidelity Texture Transfer for 3D Garments Generation from In-The-Wild Images},
+    author    = {Zhang, Cheng and Wang, Yuanhao and Vicente Carrasco, Francisco and Wu, Chenglei and 
+                 Yang, Jinlong and Beeler, Thabo and De la Torre, Fernando},
+    booktitle = {ACM SIGGRAPH Asia},
+    year      = {2024},
 }</code></pre>
   </div>
 </section>
@@ -227,7 +263,7 @@
          href="#">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="#" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/humansensinglab/fabric-diffusion" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
