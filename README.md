@@ -12,8 +12,7 @@
     <img src="docs/teaser.jpg" width="600px"/>
 </p>
 
-> **FabricDiffusion: High-Fidelity Texture Transfer for 3D Garments Generation from In-The-Wild Images**
-<br>
+> **FabricDiffusion: High-Fidelity Texture Transfer for 3D Garments Generation from In-The-Wild Images**<br>
 > [Cheng Zhang*](https://czhang0528.github.io/), 
 [Yuanhao Wang*](https://harrywang355.github.io/), 
 [Francisco Vicente Carrasco](https://www.linkedin.com/in/francisco-vicente-carrasco-32a508144/), 
@@ -21,8 +20,7 @@
 [Jinlong Yang](https://is.mpg.de/~jyang), 
 [Thabo Beeler](https://thabobeeler.com/), 
 [Fernando De la Torre](https://www.cs.cmu.edu/~ftorre/) 
-(* indicates equal contribution)
-<br>
+(* indicates equal contribution)<br>
 > **SIGGRAPH Asia 2024**
 
 <!-- This repo contains the code for training ITI-GEN and generating images that uniformly span across 
