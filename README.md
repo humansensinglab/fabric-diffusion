@@ -1,6 +1,6 @@
 # FabricDiffusion
 
-[![paper](https://img.shields.io/badge/paper-SIGGRAPHAsia-cyan)](https://dl.acm.org/doi/pdf/10.1145/3680528.3687637)
+[![paper](https://img.shields.io/badge/paper-SIGGRAPHAsia-cyan)](https://dl.acm.org/doi/10.1145/3680528.3687637)
 [![arXiv](https://img.shields.io/badge/arxiv-2410.01801-red)](https://arxiv.org/abs/2410.01801)
 [![webpage](https://img.shields.io/badge/webpage-green)](https://humansensinglab.github.io/fabric-diffusion/)
 [![poster](https://img.shields.io/badge/video-orange)](https://youtu.be/xYiyjwldtWc)
