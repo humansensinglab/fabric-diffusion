@@ -1,0 +1,4 @@
+outputs/
+models/
+__pycache__/
+upload_model.py

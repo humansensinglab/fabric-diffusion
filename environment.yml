@@ -1,0 +1,8 @@
+name: fabric-diff
+channels:
+  - defaults
+dependencies:
+  - pip:
+      - diffusers==0.32.1
+      - torch==2.5.1
+      - transformers==4.47.1
